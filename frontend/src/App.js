@@ -1,25 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Fragment } from 'react';
+import "./global.css"
+import Routes from "./routes"
 
+//componente: É uma função que retorna conteúdos HTML5
+//JSX (JavaScript XML(Extended)): JavaScript integrado ao HTML
+//propriedades: passar atributos para um componentes
+//estado: informação que será mantida por um componente
+//imutabilidade: não pode alterar o valor do estado de forma direta
+//useState retorna um array. Array[valor, função de atualização]
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Hello World. Welcome to the world of react!
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <Routes></Routes>
+    </Fragment>
   );
 }
 
